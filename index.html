@@ -14,7 +14,6 @@
 
         .cinematic-header { font-family: 'Syne', sans-serif; text-transform: uppercase; line-height: 0.8; letter-spacing: -0.05em; }
         
-        /* Image B&W to Color Effect */
         .cinematic-img {
             filter: grayscale(100%);
             transition: filter 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;
@@ -41,6 +40,10 @@
         .skill-badge { padding: 8px 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
         .skill-badge:hover { border-color: var(--gold); color: var(--gold); }
 
+        /* Resume Specific Styling */
+        .resume-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; transition: 0.3s; }
+        .resume-card:hover { border-color: var(--gold); background: rgba(255,255,255,0.04); }
+
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-thumb { background: var(--gold); }
     </style>
@@ -52,6 +55,7 @@
         <div class="hidden md:flex gap-8 text-[10px] uppercase font-bold tracking-widest opacity-60">
             <a href="#showreel" class="hover:text-[#c5a059] transition">Showreel</a>
             <a href="#about" class="hover:text-[#c5a059] transition">About</a>
+            <a href="#resume" class="hover:text-[#c5a059] transition">Resume</a>
             <a href="#cinematography" class="hover:text-[#c5a059] transition">Visuals</a>
             <a href="#motion" class="hover:text-[#c5a059] transition">Motion</a>
             <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
@@ -81,32 +85,48 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 px-6 bg-zinc-950/20">
+    <section id="resume" class="py-20 px-6 bg-zinc-950/40">
         <div class="max-w-6xl mx-auto">
-            <span class="section-title" data-aos="fade-up">Behind the Lens</span>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="relative group" data-aos="fade-right">
-                    <div class="relative overflow-hidden rounded-2xl border border-white/10 aspect-[4/5] bg-white/5">
-                        <img src="viraj-1.jpeg" alt="Viraj Profile" class="w-full h-full object-cover cinematic-img">
-                    </div>
-                    <div class="absolute inset-0 border border-[#c5a059]/20 rounded-2xl transform scale-105 group-hover:border-[#c5a059]/50 transition duration-1000 pointer-events-none"></div>
-                </div>
-                <div class="space-y-6" data-aos="fade-left">
-                    <h3 class="text-4xl md:text-5xl font-extrabold cinematic-header mb-6 italic">Capturing Dreams <span class="text-zinc-500">into Frames.</span></h3>
-                    <p class="text-zinc-400 leading-relaxed font-light text-base mb-8">
-                        Me **Viraj**, ek dedicated Cinematographer ani Video Editor. Fkat frames record karna majha uddesh nahi, tar pratyek short madhe ek cinematic storytelling, raw emotion, ani unique visual experience create karna majhi visual signature ahe. 
-                    </p>
-                    <div class="grid grid-cols-2 gap-6 border-t border-white/10 pt-8 text-center md:text-left">
-                        <div>
-                            <p class="text-3xl font-extrabold cinematic-header text-[#c5a059]">50+</p>
-                            <p class="text-[9px] uppercase tracking-widest text-zinc-500">Projects Directed</p>
+            <span class="section-title" data-aos="fade-up">Professional Journey</span>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6 italic text-white/80">Experience</h3>
+                    <div class="space-y-4">
+                        <div class="resume-card">
+                            <p class="text-[10px] text-[#c5a059] font-bold mb-1">2023 - PRESENT</p>
+                            <h4 class="text-lg font-bold">Freelance Cinematographer</h4>
+                            <p class="text-zinc-500 text-sm">Working with various brands and artists to create cinematic advertisements and music videos.</p>
                         </div>
-                        <div>
-                            <p class="text-3xl font-extrabold cinematic-header text-[#c5a059]">4K</p>
-                            <p class="text-[9px] uppercase tracking-widest text-zinc-500">Mastered Quality</p>
+                        <div class="resume-card">
+                            <p class="text-[10px] text-[#c5a059] font-bold mb-1">2022 - 2023</p>
+                            <h4 class="text-lg font-bold">Video Editor</h4>
+                            <p class="text-zinc-500 text-sm">Specialized in rhythmic editing and color grading for high-end digital content.</p>
                         </div>
                     </div>
                 </div>
+
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6 italic text-white/80">Education</h3>
+                    <div class="space-y-4">
+                        <div class="resume-card">
+                            <p class="text-[10px] text-[#c5a059] font-bold mb-1">2020 - 2023</p>
+                            <h4 class="text-lg font-bold">Bachelor of Arts (Media)</h4>
+                            <p class="text-zinc-500 text-sm">Focused on Visual Communication and Film Theory.</p>
+                        </div>
+                        <div class="resume-card">
+                            <p class="text-[10px] text-[#c5a059] font-bold mb-1">2020</p>
+                            <h4 class="text-lg font-bold">Cinematography Masterclass</h4>
+                            <p class="text-zinc-500 text-sm">Certified in advanced lighting and camera movement techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" data-aos="zoom-in">
+                <a href="https://drive.google.com/file/d/1k56Nxg1S11yjCpGrt2LvIqB38TE4m7Sx/view?usp=sharing" target="_blank" class="px-10 py-4 border border-[#c5a059] text-[#c5a059] text-[10px] font-black uppercase tracking-[0.3em] rounded-md hover:bg-[#c5a059] hover:text-black transition duration-500">
+                    Download Full CV
+                </a>
             </div>
         </div>
     </section>
@@ -125,7 +145,7 @@
                         <p class="text-[9px] font-bold uppercase tracking-widest">After Effects</p>
                     </div>
                     <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059]">
-                        <img src="https://www.blackmagicdesign.com/images/products/davinciresolve/icons/resolve-icon.png" class="w-8 h-8 mx-auto mb-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg" class="w-8 h-8 mx-auto mb-3">
                         <p class="text-[9px] font-bold uppercase tracking-widest">DaVinci Resolve</p>
                     </div>
                     <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059]">
@@ -153,33 +173,6 @@
             <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/yhGAK3I3U1g" allowfullscreen></iframe></div>
             <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="150"><iframe class="w-full h-full" src="https://www.youtube.com/embed/jK3tC-hnrUI" allowfullscreen></iframe></div>
             <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="200"><iframe class="w-full h-full" src="https://www.youtube.com/embed/frxO8mNM6KY" allowfullscreen></iframe></div>
-        </div>
-        <div class="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 gap-6">
-            <div class="video-container aspect-video" data-aos="zoom-in"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
-            <div class="video-container aspect-video" data-aos="zoom-in" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
-        </div>
-    </section>
-
-    <section id="motion" class="py-16 px-6">
-        <span class="section-title" data-aos="fade-up">Motion Graphics</span>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-             <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe>
-            </div>
-            <div class="video-container aspect-video self-center" data-aos="fade-left">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="films" class="py-16 px-6 bg-zinc-950/30">
-        <span class="section-title" data-aos="fade-up">Short Films</span>
-        <div class="max-w-5xl mx-auto space-y-8">
-            <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe></div>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="video-container aspect-video" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe></div>
-                <div class="video-container aspect-video" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe></div>
-            </div>
         </div>
     </section>
 
