@@ -23,7 +23,7 @@
             transform: scale(1.02);
         }
 
-        .glass-nav { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .glass-nav { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); z-index: 1000; }
 
         .video-container {
             position: relative;
@@ -34,5 +34,49 @@
             transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
         }
         .video-container:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2); }
- 
 
+        .btn-resume {
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 8px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .btn-resume:hover {
+            background: var(--gold);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full p-6 glass-nav flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">VIRAJ<span class="text-[#c5a059]">.</span></div>
+        <div class="flex items-center gap-8">
+            <a href="#work" class="hover:text-[#c5a059] transition-colors">Work</a>
+            <a href="#about" class="hover:text-[#c5a059] transition-colors">About</a>
+            <a href="TUJHI_RESUME_LINK_ITHE_PASTE_KAR" target="_blank" class="btn-resume">Resume</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center px-10">
+        <h1 class="cinematic-header text-[12vw]" data-aos="fade-up">Cinematic</h1>
+        <h1 class="cinematic-header text-[12vw] text-right" data-aos="fade-up" data-aos-delay="200">Visionary</h1>
+        
+        <div class="mt-10 flex justify-between items-end">
+            <p class="max-w-md text-gray-400 uppercase tracking-widest text-xs leading-relaxed">
+                Capturing raw emotions through the lens. <br>Based in India, working worldwide.
+            </p>
+            <div class="text-[#c5a059] text-sm tracking-[0.5em] uppercase">Scroll to explore</div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
